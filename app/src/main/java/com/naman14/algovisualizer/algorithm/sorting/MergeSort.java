@@ -17,6 +17,7 @@ public class MergeSort extends SortAlgorithm implements DataHandler {
         this.logFragment = logFragment;
     }
 
+    
     @Override
     public void run() {
         super.run();
