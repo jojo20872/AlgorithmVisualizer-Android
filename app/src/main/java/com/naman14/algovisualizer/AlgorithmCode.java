@@ -92,6 +92,34 @@ public class AlgorithmCode {
             "    }\n" +
             "}";
 
+    public static final String CODE_MERGE_SORT = "    void mergesort(int[] array, int[] temp, int leftStart, int rightEnd){\n" +
+            "        if(leftStart >= rightEnd) return;\n" +
+            "        int middle = (leftStart + rightEnd) / 2;\n" +
+            "        mergesort(array, temp, leftStart, middle);\n" +
+            "        mergesort(array, temp, middle + 1, rightEnd);\n" +
+            "        mergeHalves(array, temp, leftStart, rightEnd);\n" +
+            "    }\n" +
+            "\n" +
+            "    void mergeHalves(int[] array, int[] temp, int leftStart, int rightEnd){\n" +
+            "        int leftEnd = (leftStart + rightEnd) / 2;\n" +
+            "        int rightStart = leftEnd + 1;\n" +
+            "        int size = rightEnd - leftStart + 1;\n" +
+            "\n" +
+            "        int left = leftStart;\n" +
+            "        int right = rightStart;\n" +
+            "        int index = leftStart;\n" +
+            "\n" +
+            "        while(left <= leftEnd && right <= rightEnd) {\n" +
+            "            if(array[left] <= array[right]){\n" +
+            "                temp[index] = array[left];\n" +
+            "                left++;\n" +
+            "            } else{\n" +
+            "                temp[index] = array[right];\n" +
+            "                right++;\n" +
+            "            }\n" +
+            "            index++;\n" +
+            "        }";
+
     public static final String CODE_BST_SEARCH = " int id = DataUtils.getRandomKeyFromBST();\n" +
             " addLog(\"Searching for \" + String.valueOf(id));\n" +
             " BinarySearchTree.Node current = b.getRoot();\n" +

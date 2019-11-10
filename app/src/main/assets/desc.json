@@ -104,6 +104,12 @@
       "<a href='https://en.wikipedia.org/wiki/Quicksort'>Quicksort</a><br>"
     ]
   },
+  "merge_sort": {
+    "Merge Sort": "Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves.",
+    "Complexity": {
+      "Time": "worst O(nlogn), best O(nlogn), average O(nlogn)",
+      "Space": "worst O(n)"
+    },
   "linked_list": {
     "Singly linked list": "A Linked List is a linear collection of data elements, called nodes, each pointing to the next node by means of a pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence. ",
     "Complexity": {

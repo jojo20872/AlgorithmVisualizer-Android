@@ -97,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
                             case 3:
                                 algoFragment.setupFragment(Algorithm.QUICKSORT);
                                 break;
+                            case 4:
+                                algoFragment.setupFragment(Algorithm.MERGE_SORT);
                         }
                         break;
                     case 2:
@@ -227,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
         heading2.add("Insertion Sort");
         heading2.add("Selection Sort");
         heading2.add("Quicksort");
+        heading2.add("Merge Sort");
         List<String> heading3 = new ArrayList<String>();
         heading3.add("BST Search");
         heading3.add("BST Insert");
